@@ -1,0 +1,432 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4BFA1920B7C568B728DDA315 /* libPods-GeolocationModule.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CC62E181364564732DD334F /* libPods-GeolocationModule.a */; };
+		EF7F15981EF1212E00E637EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7F15971EF1212E00E637EB /* main.m */; };
+		EF7F159B1EF1212E00E637EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7F159A1EF1212E00E637EB /* AppDelegate.m */; };
+		EF7F159E1EF1212E00E637EB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7F159D1EF1212E00E637EB /* ViewController.m */; };
+		EF7F15A11EF1212E00E637EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF7F159F1EF1212E00E637EB /* Main.storyboard */; };
+		EF7F15A31EF1212E00E637EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF7F15A21EF1212E00E637EB /* Assets.xcassets */; };
+		EF7F15A61EF1212E00E637EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF7F15A41EF1212E00E637EB /* LaunchScreen.storyboard */; };
+		EF7F15B21EF121BC00E637EB /* GeolocationPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7F15B11EF121BC00E637EB /* GeolocationPlugin.m */; };
+		EF7F15B51EF121D200E637EB /* GeolocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7F15B41EF121D200E637EB /* GeolocationService.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9CC62E181364564732DD334F /* libPods-GeolocationModule.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GeolocationModule.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF381A5E149BCC09EBABB329 /* Pods-GeolocationModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeolocationModule.release.xcconfig"; path = "Pods/Target Support Files/Pods-GeolocationModule/Pods-GeolocationModule.release.xcconfig"; sourceTree = "<group>"; };
+		E8C492F1182D8BFD15C95A4F /* Pods-GeolocationModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeolocationModule.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeolocationModule/Pods-GeolocationModule.debug.xcconfig"; sourceTree = "<group>"; };
+		EF7F15931EF1212E00E637EB /* GeolocationModule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeolocationModule.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF7F15971EF1212E00E637EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EF7F15991EF1212E00E637EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EF7F159A1EF1212E00E637EB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EF7F159C1EF1212E00E637EB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EF7F159D1EF1212E00E637EB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EF7F15A01EF1212E00E637EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF7F15A21EF1212E00E637EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EF7F15A51EF1212E00E637EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EF7F15A71EF1212E00E637EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF7F15B01EF121BC00E637EB /* GeolocationPlugin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeolocationPlugin.h; sourceTree = "<group>"; };
+		EF7F15B11EF121BC00E637EB /* GeolocationPlugin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeolocationPlugin.m; sourceTree = "<group>"; };
+		EF7F15B31EF121D200E637EB /* GeolocationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeolocationService.h; sourceTree = "<group>"; };
+		EF7F15B41EF121D200E637EB /* GeolocationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeolocationService.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF7F15901EF1212E00E637EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BFA1920B7C568B728DDA315 /* libPods-GeolocationModule.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22B532CE992AD04A5AFFB26E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8C492F1182D8BFD15C95A4F /* Pods-GeolocationModule.debug.xcconfig */,
+				CF381A5E149BCC09EBABB329 /* Pods-GeolocationModule.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EF7F158A1EF1212E00E637EB = {
+			isa = PBXGroup;
+			children = (
+				EF7F15AD1EF121A900E637EB /* Shared */,
+				EF7F15951EF1212E00E637EB /* GeolocationModule */,
+				EF7F15941EF1212E00E637EB /* Products */,
+				22B532CE992AD04A5AFFB26E /* Pods */,
+				EF9C52D816C61B5475078A10 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EF7F15941EF1212E00E637EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF7F15931EF1212E00E637EB /* GeolocationModule.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF7F15951EF1212E00E637EB /* GeolocationModule */ = {
+			isa = PBXGroup;
+			children = (
+				EF7F15991EF1212E00E637EB /* AppDelegate.h */,
+				EF7F159A1EF1212E00E637EB /* AppDelegate.m */,
+				EF7F159C1EF1212E00E637EB /* ViewController.h */,
+				EF7F159D1EF1212E00E637EB /* ViewController.m */,
+				EF7F159F1EF1212E00E637EB /* Main.storyboard */,
+				EF7F15A21EF1212E00E637EB /* Assets.xcassets */,
+				EF7F15A41EF1212E00E637EB /* LaunchScreen.storyboard */,
+				EF7F15A71EF1212E00E637EB /* Info.plist */,
+				EF7F15961EF1212E00E637EB /* Supporting Files */,
+			);
+			path = GeolocationModule;
+			sourceTree = "<group>";
+		};
+		EF7F15961EF1212E00E637EB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF7F15971EF1212E00E637EB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF7F15AD1EF121A900E637EB /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				EF7F15AE1EF121A900E637EB /* Plugin */,
+				EF7F15AF1EF121A900E637EB /* Service */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		EF7F15AE1EF121A900E637EB /* Plugin */ = {
+			isa = PBXGroup;
+			children = (
+				EF7F15B01EF121BC00E637EB /* GeolocationPlugin.h */,
+				EF7F15B11EF121BC00E637EB /* GeolocationPlugin.m */,
+			);
+			path = Plugin;
+			sourceTree = "<group>";
+		};
+		EF7F15AF1EF121A900E637EB /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				EF7F15B31EF121D200E637EB /* GeolocationService.h */,
+				EF7F15B41EF121D200E637EB /* GeolocationService.m */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		EF9C52D816C61B5475078A10 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9CC62E181364564732DD334F /* libPods-GeolocationModule.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF7F15921EF1212E00E637EB /* GeolocationModule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF7F15AA1EF1212E00E637EB /* Build configuration list for PBXNativeTarget "GeolocationModule" */;
+			buildPhases = (
+				C23037D6635FE2F8C2892123 /* [CP] Check Pods Manifest.lock */,
+				EF7F158F1EF1212E00E637EB /* Sources */,
+				EF7F15901EF1212E00E637EB /* Frameworks */,
+				EF7F15911EF1212E00E637EB /* Resources */,
+				521C1F511B8DBB5E52E68009 /* [CP] Embed Pods Frameworks */,
+				0A673DBD46A2426E04F9FA51 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GeolocationModule;
+			productName = GeolocationModule;
+			productReference = EF7F15931EF1212E00E637EB /* GeolocationModule.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF7F158B1EF1212E00E637EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = t5online;
+				TargetAttributes = {
+					EF7F15921EF1212E00E637EB = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EF7F158E1EF1212E00E637EB /* Build configuration list for PBXProject "GeolocationModule" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF7F158A1EF1212E00E637EB;
+			productRefGroup = EF7F15941EF1212E00E637EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF7F15921EF1212E00E637EB /* GeolocationModule */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF7F15911EF1212E00E637EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF7F15A61EF1212E00E637EB /* LaunchScreen.storyboard in Resources */,
+				EF7F15A31EF1212E00E637EB /* Assets.xcassets in Resources */,
+				EF7F15A11EF1212E00E637EB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A673DBD46A2426E04F9FA51 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeolocationModule/Pods-GeolocationModule-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		521C1F511B8DBB5E52E68009 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GeolocationModule/Pods-GeolocationModule-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C23037D6635FE2F8C2892123 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF7F158F1EF1212E00E637EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF7F159E1EF1212E00E637EB /* ViewController.m in Sources */,
+				EF7F15B21EF121BC00E637EB /* GeolocationPlugin.m in Sources */,
+				EF7F159B1EF1212E00E637EB /* AppDelegate.m in Sources */,
+				EF7F15B51EF121D200E637EB /* GeolocationService.m in Sources */,
+				EF7F15981EF1212E00E637EB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EF7F159F1EF1212E00E637EB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF7F15A01EF1212E00E637EB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EF7F15A41EF1212E00E637EB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF7F15A51EF1212E00E637EB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF7F15A81EF1212E00E637EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF7F15A91EF1212E00E637EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF7F15AB1EF1212E00E637EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8C492F1182D8BFD15C95A4F /* Pods-GeolocationModule.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GeolocationModule/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.t5online.GeolocationModule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EF7F15AC1EF1212E00E637EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF381A5E149BCC09EBABB329 /* Pods-GeolocationModule.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = GeolocationModule/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.t5online.GeolocationModule;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF7F158E1EF1212E00E637EB /* Build configuration list for PBXProject "GeolocationModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF7F15A81EF1212E00E637EB /* Debug */,
+				EF7F15A91EF1212E00E637EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF7F15AA1EF1212E00E637EB /* Build configuration list for PBXNativeTarget "GeolocationModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF7F15AB1EF1212E00E637EB /* Debug */,
+				EF7F15AC1EF1212E00E637EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF7F158B1EF1212E00E637EB /* Project object */;
+}
