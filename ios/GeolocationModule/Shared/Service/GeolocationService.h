@@ -15,7 +15,7 @@
 
 @interface GeolocationService : NSObject
 
-@property (nonatomic, weak) id<GeolocationServiceDelegate> delegate;
+@property (nonatomic, assign) id<GeolocationServiceDelegate> delegate;
 
 - (CLLocation*)getLastLocation;
 - (void)startObserve:(NSTimeInterval)interval;
