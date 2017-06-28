@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47D554F91F038A3B002B3C26 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47D554F81F038A3B002B3C26 /* CoreLocation.framework */; };
 		4BFA1920B7C568B728DDA315 /* libPods-GeolocationModule.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CC62E181364564732DD334F /* libPods-GeolocationModule.a */; };
 		EF7F15981EF1212E00E637EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7F15971EF1212E00E637EB /* main.m */; };
 		EF7F159B1EF1212E00E637EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF7F159A1EF1212E00E637EB /* AppDelegate.m */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47D554F81F038A3B002B3C26 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		9CC62E181364564732DD334F /* libPods-GeolocationModule.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GeolocationModule.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF381A5E149BCC09EBABB329 /* Pods-GeolocationModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeolocationModule.release.xcconfig"; path = "Pods/Target Support Files/Pods-GeolocationModule/Pods-GeolocationModule.release.xcconfig"; sourceTree = "<group>"; };
 		E8C492F1182D8BFD15C95A4F /* Pods-GeolocationModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeolocationModule.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GeolocationModule/Pods-GeolocationModule.debug.xcconfig"; sourceTree = "<group>"; };
@@ -43,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47D554F91F038A3B002B3C26 /* CoreLocation.framework in Frameworks */,
 				4BFA1920B7C568B728DDA315 /* libPods-GeolocationModule.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -132,6 +135,7 @@
 		EF9C52D816C61B5475078A10 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				47D554F81F038A3B002B3C26 /* CoreLocation.framework */,
 				9CC62E181364564732DD334F /* libPods-GeolocationModule.a */,
 			);
 			name = Frameworks;
@@ -171,6 +175,7 @@
 				TargetAttributes = {
 					EF7F15921EF1212E00E637EB = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 9LGNSY89WE;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -386,6 +391,7 @@
 			baseConfigurationReference = E8C492F1182D8BFD15C95A4F /* Pods-GeolocationModule.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9LGNSY89WE;
 				INFOPLIST_FILE = GeolocationModule/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.t5online.GeolocationModule;
@@ -398,6 +404,7 @@
 			baseConfigurationReference = CF381A5E149BCC09EBABB329 /* Pods-GeolocationModule.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9LGNSY89WE;
 				INFOPLIST_FILE = GeolocationModule/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.t5online.GeolocationModule;
