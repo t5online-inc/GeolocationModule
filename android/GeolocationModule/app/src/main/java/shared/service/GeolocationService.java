@@ -1,6 +1,7 @@
 package com.t5online.nebulacore.service;
 
 import android.Manifest;
+import android.app.Activity;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.location.Location;
@@ -26,10 +27,12 @@ public class GeolocationService {
     LocationManager locationManager;
     boolean isGPSEnabled;
     boolean isNetworkEnabled;
-    Timer timer;
     boolean isChecking = false;
     private Location mLocation;
+    Timer timer;
+    TimerTask timerTask;
     private int time;
+
     private GeolocationListener mGeolocationListener;
 
     public interface GeolocationListener {
@@ -49,12 +52,21 @@ public class GeolocationService {
         } else {
             this.time = time;
             this.mGeolocationListener = listener;
-            locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 1000, 0, mlocationListener);
+            ((Activity)context).runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 1000, 0, mlocationListener);
+                }
+            });
         }
     }
 
     public void stopObserve(){
+        timerTask.cancel();
+        timerTask = null;
         timer.cancel();
+        timer.purge();
+        timer = null;
         isChecking = false;
         locationManager.removeUpdates(mlocationListener);
         time = 0;
@@ -64,13 +76,14 @@ public class GeolocationService {
     private void checkLocation(int time, final GeolocationListener listener){
         if(!isChecking) {
             timer = new Timer(true);
-            timer.schedule(new TimerTask() {
+            timerTask = new TimerTask() {
                 @Override
                 public void run() {
                     isChecking = true;
                     listener.geolocationService(mLocation);
                 }
-            }, 0, time);
+            };
+            timer.schedule(timerTask, 0, time);
         }
     }
 
@@ -95,5 +108,5 @@ public class GeolocationService {
         public void onProviderDisabled(String provider) {
 
         }
-    }
+    };
 }
