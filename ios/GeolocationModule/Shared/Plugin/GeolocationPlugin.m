@@ -29,10 +29,10 @@
     NBNativeEventService* nativeService = [Nebula serviceWithKey:SERVICE_KEY_NATIVEEVENT];
     [nativeService addEventWithBridgeContainer:self.bridgeContainer forKey:SERVICE_KEY_GEOLOCATION];
     
-    NSDictionary* retData = [NSDictionary dictionaryWithObjectsAndKeys:
-                             @(STATUS_CODE_SUCCESS) , @"code",
-                             @"" , @"message",
-                             nil];
+    NSMutableDictionary* retData = [NSMutableDictionary dictionary];
+    [retData setObject:@(STATUS_CODE_SUCCESS) forKey:@"code"];
+    [retData setObject:@"" forKey:@"message"];
+    
     [self resolve:retData];
 }
 
@@ -44,10 +44,10 @@
     NBNativeEventService* nativeService = [Nebula serviceWithKey:SERVICE_KEY_NATIVEEVENT];
     [nativeService removeEvent:SERVICE_KEY_GEOLOCATION];
     
-    NSDictionary* retData = [NSDictionary dictionaryWithObjectsAndKeys:
-                             @(STATUS_CODE_SUCCESS) , @"code",
-                             @"" , @"message",
-                             nil];
+    NSMutableDictionary* retData = [NSMutableDictionary dictionary];
+    [retData setObject:@(STATUS_CODE_SUCCESS) forKey:@"code"];
+    [retData setObject:@"" forKey:@"message"];
+    
     [self resolve:retData];
 }
 
@@ -66,10 +66,10 @@
 
 - (void)geolocationServiceNotAvailable:(GeolocationService *)geolocationService
 {
-    NSDictionary* retData = [NSDictionary dictionaryWithObjectsAndKeys:
-                             @(STATUS_CODE_ERROR) , @"code",
-                             @"Location Service is Not Available" , @"message",
-                             nil];
+    NSMutableDictionary* retData = [NSMutableDictionary dictionary];
+    [retData setObject:@(STATUS_CODE_ERROR) forKey:@"code"];
+    [retData setObject:@"Location Service is Not Available" forKey:@"message"];
+    
     [self resolve:retData];
 //    [self reject:@"E00000" message:@"Location Service is Not Available" data:nil];
 }
